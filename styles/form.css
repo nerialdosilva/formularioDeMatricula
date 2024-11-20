@@ -1,3 +1,5 @@
+@import url(fields/index.css);
+
 form {
     margin-top: 3rem;
 }
@@ -11,4 +13,9 @@ fieldset {
 
 legend {
     font-family: 600 1rem/1.25 var(--font-family);
+    margin-bottom: 1.5rem;
+}
+
+.textarea-wrapper{ 
+    display: grid;
 }
