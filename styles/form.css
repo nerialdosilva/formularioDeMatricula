@@ -19,3 +19,7 @@ legend {
 .textarea-wrapper{ 
     display: grid;
 }
+
+fieldset + fieldset {
+    margin-top: 3rem;
+}
