@@ -71,4 +71,32 @@ input {
 
         color: var(--text-primary);
     }
+
+    &:invalid {
+        border: 0.125rem solid var(--sematic-error);
+    }
+
+    & + small {    /* Pegando o irmão do inpunt o small*/
+        font: var(--text-sm);
+        color: #78716c;
+
+        display: inline-block;
+        margin-top: .25rem;
+    }
+
+    &[required] + .error { /*Se o input tiver um required do lado dele (ex.: um .error) ira receber*/
+        display: flex;
+        align-items: center;
+        gap: .25rem;
+
+        font: var(--text-sm);
+        color: var(--sematic-error);
+
+        margin-top: .25rem;
+    }
+
+    &:valid + .error { /*Para ver se o input esta valido e pega o irmão dele (.error) e aplica um valor*/
+        display: none;
+    }
 }
+
